@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="https://www.bing.com/th?id=OIP.GRbmWhgpMcl5vLg2Wvb1oAAAAA&amp;w=212&amp;h=212&amp;c=8&amp;rs=1&amp;qlt=90&amp;o=6&amp;dpr=1.25&amp;pid=3.1&amp;rm=2"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
+    <title>Imgur</title>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/e4ab5f5716.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="imgur.css" />
+  </head>
+
+  <body>
+    <div id="Navbar-Top">
+      <div id="Navbar-Left">
+        <div id="Logo">
+          <a aria-current="page" class="Navbar-logo active" href="/"
+            ><svg
+              width="94"
+              height="34"
+              viewBox="0 0 94 34"
+              class="icon stroke fill"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Imgur</title>
+              <path
+                d="M86.8012 17.336C86.8012 15.6108 86.981 15.0039 88.5637 14.3332C89.1292 14.0977 89.7077 13.9104 90.2587 13.7321C91.9506 13.1844 93.3833 12.7206 93.3833 11.2023C93.3833 9.86081 92.0884 8.71123 90.5059 8.71123C89.175 8.71123 87.8441 9.28632 86.6572 10.4038C85.9738 9.31751 85.0747 8.80659 83.9599 8.80659C82.0176 8.80659 81.1185 9.98884 81.1185 12.4487V22.5745C81.1185 25.0344 82.0176 26.2484 83.9599 26.2484C85.9018 26.2484 86.8012 25.0344 86.8012 22.5745V17.336Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                d="M61.085 19.1569C61.085 23.9801 64.1422 26.5359 69.6448 26.5359C75.148 26.5359 78.2051 23.9801 78.2051 19.1569V12.4487C78.2051 9.98884 77.342 8.80659 75.3995 8.80659C73.4576 8.80659 72.5582 9.98884 72.5582 12.4487V18.1345C72.5582 20.4984 71.9469 21.8081 69.6448 21.8081C67.3433 21.8081 66.7314 20.4984 66.7314 18.1345V12.4487C66.7314 9.98884 65.8326 8.80659 63.9264 8.80659C61.9841 8.80659 61.085 9.98884 61.085 12.4487V19.1569Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M48.245 33.3078C52.2732 33.3078 55.2229 31.9981 56.877 29.5382C57.9919 27.9092 58.2077 25.6094 58.2077 22.5745V12.4487C58.2077 9.98884 57.3086 8.80659 55.3663 8.80659C54.5036 8.80659 53.4964 9.34959 52.8485 10.4038C51.6982 9.19008 50.2589 8.61499 48.317 8.61499C43.4974 8.61499 39.5052 12.4166 39.5052 17.5276C39.5052 22.6387 43.2456 26.2802 47.7057 26.2802C49.9351 26.2802 51.6262 25.4814 52.8485 23.9163C52.8485 24.0322 52.8582 24.1398 52.8675 24.2432C52.8762 24.339 52.8845 24.4313 52.8845 24.5234C52.8845 27.2705 51.2304 28.7718 48.4607 28.7718C46.6897 28.7718 45.3742 28.2995 44.3043 27.9153C43.5708 27.652 42.9527 27.43 42.3822 27.43C40.9796 27.43 39.9367 28.3565 39.9367 29.6342C39.9367 31.6152 43.0655 33.3078 48.245 33.3078ZM45.3676 17.5276C45.3676 15.0039 46.9864 13.4067 49.0726 13.4067C51.1583 13.4067 52.8125 15.0039 52.8125 17.5276C52.8125 20.0829 51.1944 21.7442 49.0726 21.7442C46.9506 21.7442 45.3676 20.1149 45.3676 17.5276Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                d="M31.5924 22.5745C31.5924 25.0344 32.4558 26.2484 34.3975 26.2484C36.34 26.2484 37.2388 25.0344 37.2388 22.5745V15.3553C37.2388 11.011 34.7573 8.74302 30.8371 8.74302C28.4996 8.74302 26.8446 9.41375 25.1184 11.1069C23.7877 9.54178 21.9172 8.74302 19.4717 8.74302C17.5655 8.74302 16.1268 9.25424 14.9396 10.4038C14.2563 9.31751 13.3575 8.80659 12.2426 8.80659C10.3 8.80659 9.40124 9.98884 9.40124 12.4487V22.5745C9.40124 25.0344 10.3 26.2484 12.2426 26.2484C14.1842 26.2484 15.0836 25.0344 15.0836 22.5745V16.8251C15.0836 14.3332 15.8753 13.0556 17.925 13.0556C19.7595 13.0556 20.4788 14.3332 20.4788 16.8887V22.5745C20.4788 25.0344 21.3776 26.2484 23.3202 26.2484C25.2624 26.2484 26.1615 25.0344 26.1615 22.5745V16.8251C26.1615 14.3332 26.9526 13.0556 29.0026 13.0556C30.8371 13.0556 31.5924 14.3332 31.5924 16.8887V22.5745Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                d="M6.23549 12.4487C6.23549 9.98884 5.33669 8.80659 3.43046 8.80659C1.48851 8.80659 0.589111 9.98884 0.589111 12.4487V22.5745C0.589111 25.0344 1.48851 26.2484 3.43046 26.2484C5.373 26.2484 6.23549 25.0344 6.23549 22.5745V12.4487Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                d="M3.51952 0.756104C1.58599 0.756104 0 2.1078 0 3.75626C0 5.43752 1.54695 6.7561 3.51952 6.7561C5.45305 6.7561 7 5.43752 7 3.75626C7 2.1078 5.45305 0.756104 3.51952 0.756104Z"
+                fill="#1BB76E"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="Button">
+          <img
+            src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+          />
+          <span>New Post</span>
+        </div>
+      </div>
+      <!-- <div id="Navbar-Center">
+						<div id="Search-Bar">
+								<input type="text" placeholder="Images, #tags, @users oh my!">
+								<button type="submit" class="Searchbar-submitInput"><img class="search" src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"></button>
+						</div>
+			 </div> -->
+      <div id="Navbar-Right">
+        <div>
+          <a class="EmeraldButton" href="/">Go Ad-Free</a>
+        </div>
+
+        <div id="Middle">
+          <div>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 -2 34 34"
+              class="uScaleTransition ProfileNavbar-item"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Comment Leaderboard</title>
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h32v32H0z"></path>
+                <g
+                  transform="translate(6.5 3)"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 16.977v7.076l5.5-2.481 5.5 2.481v-7.076l-5.5 1.245L4 16.977z"
+                  ></path>
+                  <circle cx="9.5" cy="9.5" r="8.5"></circle>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Chat</title>
+              <path
+                stroke="#ffffff"
+                stroke-width="2"
+                clip-rule="evenodd"
+                d="M11.076 27.182a.24.24 0 00.37.153c.908-.576 2.805-2.12 5.345-4.496l.313-.292h3.965c3 0 5.431-2.442 5.431-5.454v-5.139c0-3.012-2.432-5.454-5.431-5.454H10.931c-3 0-5.431 2.442-5.431 5.454v6.28c0 2.382 1.922 4.313 4.294 4.313h1.11l-.024 1.115c-.037 1.6.033 2.783.196 3.52v0z"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 -2 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Notifications</title>
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h32v32H0z"></path>
+                <path
+                  stroke="#ffffff"
+                  d="M14 27c.681.123 1.348.185 2 .185.652 0 1.319-.062 2-.185"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  fill="#ffffff"
+                  d="M16 23.711c-4.425 0-9.899-.453-10.847-2.612-.206-.47-.384-1.416.74-2.476 1.391-1.312 1.68-3.554 1.986-5.927.508-3.938 1.14-8.838 8.093-8.999 7.008.161 7.64 5.06 8.149 8.998.306 2.374.595 4.615 1.985 5.927 1.125 1.061.947 2.007.741 2.476-.948 2.16-6.422 2.613-10.847 2.613zM7.405 20.33c.69.51 3.667 1.178 8.595 1.178 4.928 0 7.906-.669 8.595-1.178a1.614 1.614 0 0 0-.14-.148c-1.96-1.85-2.313-4.58-2.654-7.22-.489-3.79-.964-6.18-4.028-6.862a9.305 9.305 0 0 0-1.801-.199c-4.648.109-5.201 2.625-5.773 7.062-.341 2.64-.693 5.37-2.654 7.219a1.58 1.58 0 0 0-.14.148z"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="buttonSign">
+          <span>Sign In</span>
+        </div>
+      </div>
+    </div>
+    <div id="Navbar">
+      <div class="Message">This site kills boredom</div>
+
+      <div id="Few-Cards">
+        <div
+          id="Explore"
+          style="
+            display: flex;
+            justify-content: space-between;
+            width: 86%;
+            margin: auto;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1.3px;
+          "
+        >
+          <h4>EXPLORE TAGS</h4>
+          <h4>MORE TAGS+</h4>
+        </div>
+        <div class="TrendingTags-container" style="width: 100%">
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjrv_gdrJc3E1Mm6GwY4g96G23wiDDZgrIA&usqp=CAU');
+              height: 130px;
+              width: 232px;
+            "
+          >
+         
+            <div class="Tag-title" style="background-color: rgb(64, 112, 181)">
+              <div class="Tag-name">hydraulic press</div>
+              <div class="Tag-posts">FEATURED • 270 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KG8HJ-Ip-iyE8qyO7KJL7vC2DMfVE1Mq4OYCFhawOvloCf2-kvdW6w7eiWLBR0mvGcM&usqp=CAU');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(77, 84, 154)">
+              <div class="Tag-name">imgur13</div>
+              <div class="Tag-posts">7,840 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqyUtpPwCkrhhOzww88Bj56z9Rwmu-9uL07A&usqp=CAU');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(50, 141, 103)">
+              <div class="Tag-name">vintage</div>
+              <div class="Tag-posts">8,932 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('data:image/jpeg;base64,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');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(197, 101, 121)">
+              <div class="Tag-name">pokemon</div>
+              <div class="Tag-posts">52,600 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGu83WyIjeEfamqKyTlVl_xPq8R5kkmdaVqQ&usqp=CAU');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(50, 141, 103)">
+              <div class="Tag-name">black history month</div>
+              <div class="Tag-posts">184 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYBPfd25kyU1ovx6rl19vcQE28S-SLmZmGQ&usqp=CAU');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(228, 125, 87)">
+              <div class="Tag-name">science and tech</div>
+              <div class="Tag-posts">44,949 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yeiktc-ugaU7AwBbP2a1ZqqFNFpKXIDRgA&usqp=CAU');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(19, 45, 49)">
+              <div class="Tag-name">staff picks</div>
+              <div class="Tag-posts">6,538 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://i.imgur.com/PNQ5cOe.jpg');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(43, 26, 90)">
+              <div class="Tag-name">gaming</div>
+              <div class="Tag-posts">298,256 Posts</div>
+            </div>
+          </a>
+
+          <a
+            class="Tag"
+            href="/"
+            style="
+              background-image: url('https://blog.imgur.com/wp-content/uploads/2021/05/HPUd1em.png');
+              height: 130px;
+              width: 110px;
+            "
+          >
+            <div class="Tag-title" style="background-color: rgb(186, 81, 159)">
+              <div class="Tag-name">memes</div>
+              <div class="Tag-posts">571,267 Posts</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Home-Content-Container"></div>
+  </body>
+</html>
+<script src="index.js"></script>
